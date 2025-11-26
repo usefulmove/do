@@ -1,2 +1,1 @@
-# do
-a simple focus timer
+. a simple focus timer .
