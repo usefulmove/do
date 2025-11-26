@@ -1,10 +1,9 @@
-#!/usr/bin/env python3
+#!/home/dedmonds/repos/do/.venv/bin/python
 import sys
 from time import sleep
 from playsound3 import playsound
 
-
-SOUND_PATH = './breathe.mp3'
+SOUND_PATH = '/home/dedmonds/repos/do/breathe.mp3'
 
 
 def main():
@@ -23,9 +22,9 @@ def main():
 
     sleep(focus_min)
 
-    print(f"  success: enjoy your day")
-
     playsound(SOUND_PATH)
+
+    print(f"  success: enjoy your day")
 
 
 if __name__ == "__main__":
