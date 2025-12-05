@@ -8,3 +8,9 @@ dependencies = [
     "playsound3>=3.3.0",
     "rich>=14.2.0",
 ]
+
+[dependency-groups]
+dev = [
+    "ruff>=0.14.8",
+    "ty>=0.0.1a31",
+]
