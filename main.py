@@ -1,12 +1,13 @@
-#!/home/dedmonds/repos/do/.venv/bin/python
+#!/usr/bin/env python
+from pathlib import Path
+from random import randint
 import sys
 from time import sleep
-from rich.console import Console
-from random import randint
 from playsound3 import playsound
+from rich.console import Console
 
 
-SOUND_PATH: str = '/home/dedmonds/repos/do/breathe.mp3'
+SOUND_FILE: str = 'breathe.mp3'
 
 
 # console colors
@@ -69,7 +70,7 @@ def main() -> None:
 
     sleep(focus_min)
 
-    playsound(SOUND_PATH)
+    playsound(SOUND_FILE)
 
     message: str = messages[randint(0, len(messages) - 1)]
 
