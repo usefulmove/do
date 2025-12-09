@@ -8,6 +8,7 @@ from rich.console import Console
 
 
 SOUND_FILE: str = 'breathe.mp3'
+BASE_DIR = Path(__file__).parent
 
 
 # console colors
@@ -70,7 +71,7 @@ def main() -> None:
 
     sleep(focus_min)
 
-    playsound(SOUND_FILE)
+    playsound(BASE_DIR / SOUND_FILE)
 
     message: str = messages[randint(0, len(messages) - 1)]
 
